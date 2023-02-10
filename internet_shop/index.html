@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>internetShop</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+
+    <div class="modalWrapperRegister">
+      <div class="modalWrapperRegister__body">
+        <span class="modalWrapperRegister__body-close">&times;</span>
+        <div class="modalWrapperRegister__body__content">
+          <h3>Регистрация</h3>
+          <input type="text" class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item" placeholder="Ваше имя" />
+          <!-- <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Контактный номер телефона" /> -->
+          <input type="email" class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item" placeholder="E-Mail" />
+          <div class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item date"><label for="DOB">Дата рождения</label><input id="DOB" type="date"/></div>
+          <input type="text" class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item" placeholder="Логин" />
+          <input type="text" class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item" placeholder="Пароль" />
+          <input type="text" class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item" placeholder="Пароль еще раз" />
+          <!-- <textarea class="modalWrapperSignIn__body__content__textarea modalWrapperSignIn__body__content__item" placeholder="Комментарий"></textarea>
+          <div class="modalWrapperSignIn__body__content__file modalWrapperSignIn__body__content__item modalWrapperSignIn__body__content__file">
+            <label for="file">Прикрепить спецификацию, ТЗ, проект</label>
+            <input name="file" id="file" type="file"/>             
+          </div> -->
+          <button class="modalWrapperRegister__body__content__button btn">Зарегистрироваться</button>
+          <p class="modalWrapperRegister__body__content__item modalWrapperRegister__body__content__italicsText">*Заполняя данную форму, я даю согласие
+            на обработку персональных данных</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalWrapperSignIn">
+      <div class="modalWrapperSignIn__body">
+        <span class="modalWrapperSignIn__body-close">&times;</span>
+        <div class="modalWrapperSignIn__body__content">
+          <h3>Вход</h3>
+          <!-- <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Ваше имя" /> -->
+          <!-- <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Контактный номер телефона" /> -->
+          <!-- <input type="email" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="E-Mail" /> -->
+          <!-- <div class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item date"><label for="DOB">Дата рождения</label><input id="DOB" type="date"/></div> -->
+          <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Логин" />
+          <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Пароль" />
+          <!-- <input type="text" class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item" placeholder="Пароль еще раз" /> -->
+          <!-- <textarea class="modalWrapperSignIn__body__content__textarea modalWrapperSignIn__body__content__item" placeholder="Комментарий"></textarea>
+          <div class="modalWrapperSignIn__body__content__file modalWrapperSignIn__body__content__item modalWrapperSignIn__body__content__file">
+            <label for="file">Прикрепить спецификацию, ТЗ, проект</label>
+            <input name="file" id="file" type="file"/>             
+          </div> -->
+          <button class="modalWrapperSignIn__body__content__button btn">Войти</button>
+          <!-- <p class="modalWrapperSignIn__body__content__item modalWrapperSignIn__body__content__italicsText">*Заполняя данную форму, я даю согласие
+            на обработку персональных данных</p> -->
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__container">
+        <a class="header__container__link" href="internetShop.html">Каталог</a>
+        <img src="img/logo.svg" class="header__logo" alt="" />
+        <div class="header__entrance">
+          <div class="header__entrance__firstline">
+            <a href=""
+            ><img
+              src="img/icons/cart.svg"
+              class="header__entrance__firstline__cart"
+              alt=""
+          /></a>
+          <button class="header__entrance__firstline-btn btn register-btn">
+            Зарегистрироваться
+          </button>
+          </div>
+          <button class="header__entrance-btn btn signin-btn">Войти</button>
+          
+          <!-- <div class="header__entrance__auth">
+            
+            <button class="header__entrance__auth-btn btn">Войти</button>
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+      <div class="contentMain">
+        <h1>Notepad</h1>
+        <ul class="notebooks__list">
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+          <li class="notebooks__list__item">
+            <img
+              src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+              alt=""
+            />
+            <h3>Блокнот Leuchtturm1917 репортёрский А6</h3>
+            <p>Внутренний блок: в линейку</p>
+            <p>Цвет: пудровый</p>
+            <p>Тип обложки: твердая</p>
+            <button class="notebooks__list__item-btn btn">В корзину</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p>Leuchtturm1917</p>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
