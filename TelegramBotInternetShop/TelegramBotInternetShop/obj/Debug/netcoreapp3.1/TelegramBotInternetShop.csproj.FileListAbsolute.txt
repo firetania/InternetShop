@@ -1,0 +1,16 @@
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.exe
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.deps.json
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.runtimeconfig.json
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.runtimeconfig.dev.json
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.dll
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\TelegramBotInternetShop.pdb
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.csprojAssemblyReference.cache
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.AssemblyInfoInputs.cache
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.AssemblyInfo.cs
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.csproj.CoreCompileInputs.cache
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.csproj.CopyComplete
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.dll
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.pdb
+D:\Универ\8 семестр\Веб-разработка\InternetShop\TelegramBotInternetShop\TelegramBotInternetShop\obj\Debug\netcoreapp3.1\TelegramBotInternetShop.genruntimeconfig.cache

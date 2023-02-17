@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FJjzEaAi7aFrM8d3dIBBl4jgGjx9dcPmBGQjKX39+eUqkE9ecBjMqlL8lw/b2Vr8YaNWSJuPT734rvuSoxPuyg==",
+  "success": true,
+  "projectFilePath": "D:\\Универ\\8 семестр\\Веб-разработка\\InternetShop\\TelegramBotInternetShop\\TelegramBotInternetShop\\TelegramBotInternetShop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ognev\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\ognev\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
