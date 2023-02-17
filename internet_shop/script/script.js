@@ -1,3 +1,4 @@
+// Модалка регистрации
 let activeModalRegister=false;
 const modalWrapperRegister=document.querySelectorAll(".modalWrapperRegister")[0]
 const modalBodyRegister=document.querySelectorAll(".modalWrapperRegister__body")[0]
@@ -18,6 +19,7 @@ modalCloseRegister.addEventListener("click", function (e) {
     modalBodyRegister.className = "modalWrapperRegister__body";
 })
 
+// Модалка входа
 let activeModalSignIn=false;
 const modalWrapperSignIn=document.querySelectorAll(".modalWrapperSignIn")[0]
 const modalBodySignIn=document.querySelectorAll(".modalWrapperSignIn__body")[0]
@@ -36,4 +38,25 @@ modalCloseSignIn.addEventListener("click", function (e) {
   console.log(modalCloseSignIn)
   modalWrapperSignIn.className = "modalWrapperSignIn";
     modalBodySignIn.className = "modalWrapperSignIn__body";
+})
+
+// Модалка выхода
+let activeModalSignOut=false;
+const modalWrapperSignOut=document.querySelectorAll(".modalWrapperSignOut")[0]
+const modalBodySignOut=document.querySelectorAll(".modalWrapperSignOut__body")[0]
+const modalCloseSignOut=document.querySelectorAll(".modalWrapperSignOut__body-close")[0]
+const modalButtonSignOut=document.querySelectorAll(".signout-btn")
+
+modalButtonSignOut.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    console.log(modalCloseSignOut)
+    modalWrapperSignOut.className += " modalWrapperSignOut-active";
+    modalBodySignOut.className += " modalWrapperSignOut__body-active";
+  })
+})
+
+modalCloseSignOut.addEventListener("click", function (e) {
+  console.log(modalCloseSignOut)
+  modalWrapperSignOut.className = "modalWrapperSignOut";
+    modalBodySignOut.className = "modalWrapperSignOut__body";
 })
