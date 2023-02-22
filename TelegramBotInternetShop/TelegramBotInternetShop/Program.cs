@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Telegram.Bot;
@@ -10,12 +12,24 @@ namespace TelegramBotInternetShop
 {
     class Program
     {
-        // ПЕРЕД ЗАПУСКОМ ВСТАВИТЬ ТОКЕН
-        private static string token = <здесь вставить токен бота>;
+        private static string token = "";
+        private static string tokenFilePath = "D:/Универ/8 семестр/Веб-разработка/Не для комитов/TelegramBotNotepadShopToken.txt";
+
         private static TelegramBotClient client;
+
+        private static Dictionary<string, string> commands = new Dictionary<string, string>()
+        {
+            {"getcode", "получить одноразовый пароль" },
+            {"readcommands", "просмотреть доступные команды" }
+        };
 
         static void Main(string[] args)
         {
+            using (StreamReader sr = new StreamReader(tokenFilePath))
+            {
+                token = sr.ReadLine();
+            }
+
             client = new TelegramBotClient(token);
 
             client.StartReceiving(Update, Error);
@@ -26,24 +40,47 @@ namespace TelegramBotInternetShop
         async static Task Update(ITelegramBotClient botClient, Update update, CancellationToken token)
         {
             var message = update.Message;
-            string messageForOneTimePassword = "getcode";
 
             if (message != null)
             {
-                if (message.Text == messageForOneTimePassword)
+                if (commands.ContainsKey(message.Text))
                 {
-                    string oneTimePassword = "";
-                    var rand = new Random();
-                    for (int ctr = 0; ctr <= 4; ctr++)
-                        oneTimePassword += rand.Next(10).ToString();
+                    switch (message.Text)
+                    {
+                        case "getcode":
+                            {
+                                string oneTimePassword = "";
+                                var rand = new Random();
+                                for (int ctr = 0; ctr <= 4; ctr++)
+                                    oneTimePassword += rand.Next(10).ToString();
 
-                    Console.WriteLine(update.Message.Text);
-                    await client.SendTextMessageAsync(update.Message.Chat.Id, "Here's your code " + oneTimePassword);
+                                Console.WriteLine(update.Message.Text);
+                                await client.SendTextMessageAsync(update.Message.Chat.Id, "Ваш код для входа " + oneTimePassword);
+                                break;
+                            }
+                        case "readcommands":
+                            {
+                                string outStr = "";
+                                foreach (KeyValuePair<string, string> kvp in commands)
+                                {
+                                    outStr += kvp.Key + " - " + kvp.Value + "\n";
+                                }
+                                Console.WriteLine(update.Message.Text);
+                                await client.SendTextMessageAsync(update.Message.Chat.Id, outStr);
+
+                                break;
+                            }
+                    }
                 }
                 else
                 {
+                    string outStr = "Неверная команда. Введите одну из доступных:\n";
+                    foreach (KeyValuePair<string, string> kvp in commands)
+                    {
+                        outStr += kvp.Key + " - " + kvp.Value + "\n";
+                    }
                     Console.WriteLine(update.Message.Text);
-                    await client.SendTextMessageAsync(update.Message.Chat.Id, "Sorry, the command is wrong. Please, enter the existing one.");
+                    await client.SendTextMessageAsync(update.Message.Chat.Id, outStr);
                 }
             }
 
