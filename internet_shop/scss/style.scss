@@ -138,6 +138,35 @@ p {
 //   }
 // }
 
+.contentItem {
+  padding-left: 235px;
+  padding-right: 235px;
+
+  &__description {
+    display: flex;
+    justify-content: space-around;
+
+    & img {
+      width: 500px;
+      height: 500px;
+    }
+
+    &__characteristics {
+      &__str {
+        // & p {
+        font-size: 20px;
+        // }
+        padding-bottom: 20px;
+      }
+      &-btn {
+        width: 280px;
+        height: 60px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 .modalWrapperRegister {
   z-index: 100;
   display: none;
@@ -202,7 +231,7 @@ p {
         margin-top: 20px;
       }
 
-      &__button{
+      &__button {
         margin-top: 30px;
       }
 
@@ -227,23 +256,23 @@ p {
           line-height: 32px;
           color: #000000;
         }
-        &:focus::placeholder{
+        &:focus::placeholder {
           color: transparent;
         }
       }
 
-      & label{
+      & label {
         padding-right: 20px;
 
         font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 32px;
-          color: #000000;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        color: #000000;
       }
 
-      & date{
+      & date {
         border: none;
       }
 
@@ -292,7 +321,7 @@ p {
           font-size: 14px;
           line-height: 32px;
           color: #98a1d1;
-          &:hover{
+          &:hover {
             cursor: pointer;
           }
         }
@@ -374,10 +403,9 @@ p {
         margin-top: 20px;
       }
 
-      &__button{
+      &__button {
         margin-top: 30px;
       }
-
 
       &__input {
         background-color: transparent;
@@ -400,23 +428,23 @@ p {
           line-height: 32px;
           color: #000000;
         }
-        &:focus::placeholder{
+        &:focus::placeholder {
           color: transparent;
         }
       }
 
-      & label{
+      & label {
         padding-right: 20px;
 
         font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 32px;
-          color: #000000;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        color: #000000;
       }
 
-      & date{
+      & date {
         border: none;
       }
 
@@ -465,7 +493,7 @@ p {
           font-size: 14px;
           line-height: 32px;
           color: #98a1d1;
-          &:hover{
+          &:hover {
             cursor: pointer;
           }
         }
@@ -547,11 +575,9 @@ p {
         margin-top: 20px;
       }
 
-
-      &__button{
+      &__button {
         margin-top: 10px;
       }
-
 
       &__input {
         background-color: transparent;
@@ -574,23 +600,23 @@ p {
           line-height: 32px;
           color: #000000;
         }
-        &:focus::placeholder{
+        &:focus::placeholder {
           color: transparent;
         }
       }
 
-      & label{
+      & label {
         padding-right: 20px;
 
         font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 32px;
-          color: #000000;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        color: #000000;
       }
 
-      & date{
+      & date {
         border: none;
       }
 
@@ -639,7 +665,7 @@ p {
           font-size: 14px;
           line-height: 32px;
           color: #98a1d1;
-          &:hover{
+          &:hover {
             cursor: pointer;
           }
         }
@@ -730,13 +756,13 @@ p {
     // flex-direction: column;
     align-items: flex-end;
 
-    &__actions{
+    &__actions {
       display: flex;
       flex-direction: column;
     }
 
-    &__firstline{
-      &__cart{
+    &__firstline {
+      &__cart {
         padding-right: 10px;
         // margin-top: 10px;
       }

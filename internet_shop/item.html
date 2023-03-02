@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>internetShopItem</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="modalWrapperRegister">
+      <div class="modalWrapperRegister__body">
+        <span class="modalWrapperRegister__body-close">&times;</span>
+        <div class="modalWrapperRegister__body__content">
+          <h3>Регистрация</h3>
+          <input
+            type="text"
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="email"
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item"
+            placeholder="E-Mail"
+          />
+          <div
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item date"
+          >
+            <label for="DOB">Дата рождения</label><input id="DOB" type="date" />
+          </div>
+          <input
+            type="text"
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item"
+            placeholder="Логин"
+          />
+          <input
+            type="text"
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item"
+            placeholder="Пароль"
+          />
+          <input
+            type="text"
+            class="modalWrapperRegister__body__content__input modalWrapperRegister__body__content__item"
+            placeholder="Пароль еще раз"
+          />
+          <button class="modalWrapperRegister__body__content__button btn">
+            Зарегистрироваться
+          </button>
+          <p
+            class="modalWrapperRegister__body__content__item modalWrapperRegister__body__content__italicsText"
+          >
+            *Заполняя данную форму, я даю согласие на обработку персональных
+            данных
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalWrapperSignIn">
+      <div class="modalWrapperSignIn__body">
+        <span class="modalWrapperSignIn__body-close">&times;</span>
+        <div class="modalWrapperSignIn__body__content">
+          <h3>Вход</h3>
+          <input
+            type="text"
+            class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item"
+            placeholder="Логин"
+          />
+          <input
+            type="text"
+            class="modalWrapperSignIn__body__content__input modalWrapperSignIn__body__content__item"
+            placeholder="Пароль"
+          />
+          <button class="modalWrapperSignIn__body__content__button btn">
+            Войти
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalWrapperSignOut">
+      <div class="modalWrapperSignOut__body">
+        <span class="modalWrapperSignOut__body-close">&times;</span>
+        <div class="modalWrapperSignOut__body__content">
+          <h3>Выход</h3>
+          <p>Вы действительно хотите выйти?</p>
+          <button class="modalWrapperSignOut__body__content__button btn">
+            Выйти
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__container">
+        <a class="header__container__link" href="index.html">Каталог</a>
+        <img src="img/logo.svg" class="header__logo" alt="" />
+        <div class="header__entrance">
+          <div class="header__entrance__firstline">
+            <a href="cart.html"
+              ><img
+                src="img/icons/cart.svg"
+                class="header__entrance__firstline__cart"
+                alt=""
+            /></a>
+          </div>
+          <div class="header__entrance__actions"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="contentItem">
+        <h2>Блокнот Leuchtturm1917 репортёрский А6</h2>
+        <div class="contentItem__description">
+        <img
+          src="img/notepad-pocket-a6-hardcover-184-numbered-pages-powder-plain.jpg"
+          alt=""
+        />
+        <div class="contentItem__description__characteristics">
+            <p class="contentItem__description__characteristics__str">Цвет: пудровый</p>
+            <p class="contentItem__description__characteristics__str">Размер: А6 (90 * 150 mm)</p>
+            <p class="contentItem__description__characteristics__str">Тип обложки: твердая</p>
+            <p class="contentItem__description__characteristics__str">Внутренний блок (разметка): в линейку</p>       
+            <p class="contentItem__description__characteristics__str">Количество страниц: 184</p>
+            <p class="contentItem__description__characteristics__str">Плотность бумаги: 80 g / sqm</p>
+            <p class="contentItem__description__characteristics__str">Вес: 300 g</p>
+            <p class="contentItem__description__characteristics__str">Цена: 1200 р</p>
+            <button class="contentItem__description__characteristics-btn btn">В корзину</button>
+        </div>
+        <!-- <button class="contentItem-btn btn">В корзину</button> -->
+      </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p>Leuchtturm1917</p>
+      </div>
+    </footer>
+    <script src="./script/scriptItemPage.js"></script>
+  </body>
+</html>
